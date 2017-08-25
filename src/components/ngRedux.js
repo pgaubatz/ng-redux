@@ -4,11 +4,11 @@ import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
 import isFunction from 'lodash/isFunction';
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
+import map from 'lodash/map';
 import digestMiddleware from './digestMiddleware';
 
 const isArray = Array.isArray;
 const assign  = Object.assign;
-const map = (arr = [], mapFn) => arr.map(mapFn);
 
 export default function ngReduxProvider() {
   let _reducer = undefined;
