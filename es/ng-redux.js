@@ -1,10 +1,10 @@
 import { applyMiddleware, bindActionCreators, combineReducers, compose, createStore } from 'redux';
 import invariant from 'invariant';
-import isPlainObject from 'lodash/isPlainObject';
-import isFunction from 'lodash/isFunction';
-import isObject from 'lodash/isObject';
-import isString from 'lodash/isString';
-import map from 'lodash/map';
+import isPlainObject from 'lodash-es/isPlainObject';
+import isFunction from 'lodash-es/isFunction';
+import isObject from 'lodash-es/isObject';
+import isString from 'lodash-es/isString';
+import map from 'lodash-es/map';
 
 function shallowEqual(objA, objB) {
   if (objA === objB) {
