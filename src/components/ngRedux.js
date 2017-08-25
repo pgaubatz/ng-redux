@@ -1,17 +1,14 @@
 import Connector from './connector';
 import invariant from 'invariant';
 import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
+import isFunction from 'lodash/isFunction';
+import isObject from 'lodash/isObject';
+import isString from 'lodash/isString';
 import digestMiddleware from './digestMiddleware';
 
-import curry from 'lodash.curry';
-import isArray from 'lodash.isarray';
-import isFunction from 'lodash.isfunction';
-import map from 'lodash.map';
-
-const typeIs = curry((type, val) => typeof val === type);
-const isObject = typeIs('object');
-const isString = typeIs('string');
+const isArray = Array.isArray;
 const assign  = Object.assign;
+const map = (arr = [], mapFn) => arr.map(mapFn);
 
 export default function ngReduxProvider() {
   let _reducer = undefined;
