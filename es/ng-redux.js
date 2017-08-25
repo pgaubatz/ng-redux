@@ -4,6 +4,7 @@ import isPlainObject from 'lodash/isPlainObject';
 import isFunction from 'lodash/isFunction';
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
+import map from 'lodash/map';
 
 function shallowEqual(objA, objB) {
   if (objA === objB) {
@@ -129,11 +130,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var isArray = Array.isArray;
 var assign = Object.assign;
-var map = function map() {
-  var arr = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-  var mapFn = arguments[1];
-  return arr.map(mapFn);
-};
 
 function ngReduxProvider() {
   var _reducer = undefined;
