@@ -14,11 +14,11 @@ if (env === 'es' || env === 'cjs') {
   config.format = env;
   config.external = [
     'invariant',
-    'lodash/isPlainObject',
-    'lodash/isFunction',
-    'lodash/isObject',
-    'lodash/isString',
-    'lodash/map',
+    'lodash-es/isPlainObject',
+    'lodash-es/isFunction',
+    'lodash-es/isObject',
+    'lodash-es/isString',
+    'lodash-es/map',
     'redux',
   ];
   config.plugins.push(
