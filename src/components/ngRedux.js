@@ -1,10 +1,10 @@
 import Connector from './connector';
 import invariant from 'invariant';
 import {createStore, applyMiddleware, compose, combineReducers} from 'redux';
-import isFunction from 'lodash/isFunction';
-import isObject from 'lodash/isObject';
-import isString from 'lodash/isString';
-import map from 'lodash/map';
+import isFunction from 'lodash-es/isFunction';
+import isObject from 'lodash-es/isObject';
+import isString from 'lodash-es/isString';
+import map from 'lodash-es/map';
 import digestMiddleware from './digestMiddleware';
 
 const isArray = Array.isArray;

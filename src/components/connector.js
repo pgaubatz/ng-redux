@@ -2,9 +2,9 @@ import shallowEqual from '../utils/shallowEqual';
 import wrapActionCreators from '../utils/wrapActionCreators';
 import invariant from 'invariant';
 
-import isPlainObject from 'lodash/isPlainObject';
-import isFunction from 'lodash/isFunction';
-import isObject from 'lodash/isObject';
+import isPlainObject from 'lodash-es/isPlainObject';
+import isFunction from 'lodash-es/isFunction';
+import isObject from 'lodash-es/isObject';
 
 const assign = Object.assign;
 const defaultMapStateToTarget = () => ({});
